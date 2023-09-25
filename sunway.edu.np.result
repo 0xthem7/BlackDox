@@ -1,0 +1,107 @@
+# Nmap 7.94 scan initiated Sun Sep 24 14:59:50 2023 as: nmap -sC -sV -T4 -oN sunway.edu.np.result sunway.edu.np
+Nmap scan report for sunway.edu.np (103.227.176.16)
+Host is up (0.083s latency).
+rDNS record for 103.227.176.16: sgssr3.supercp.com
+Not shown: 985 closed tcp ports (conn-refused)
+PORT     STATE SERVICE    VERSION
+21/tcp   open  ftp        Pure-FTPd
+|_ssl-date: 2023-09-24T09:18:41+00:00; 0s from scanner time.
+| ssl-cert: Subject: commonName=sgssr3.supercp.com
+| Subject Alternative Name: DNS:sgssr3.supercp.com
+| Not valid before: 2023-09-15T00:00:00
+|_Not valid after:  2023-12-14T23:59:59
+25/tcp   open  smtp?
+|_smtp-commands: Couldn't establish connection on port 25
+53/tcp   open  domain     ISC BIND 9.8.2rc1 (RedHat Enterprise Linux 6)
+| dns-nsid: 
+|_  bind.version: 9.8.2rc1-RedHat-9.8.2-0.68.rc1.el6.11.tuxcare.els6
+80/tcp   open  http       Apache httpd
+|_http-title: Did not follow redirect to https://sunway.edu.np/
+|_http-server-header: Apache
+110/tcp  open  pop3       Dovecot pop3d
+| ssl-cert: Subject: commonName=sunway.edu.np
+| Subject Alternative Name: DNS:sunway.edu.np, DNS:autodiscover.sunway.edu.np, DNS:cpanel.sunway.edu.np, DNS:cpcalendars.sunway.edu.np, DNS:cpcontacts.sunway.edu.np, DNS:mail.sunway.edu.np, DNS:webdisk.sunway.edu.np, DNS:webmail.sunway.edu.np, DNS:www.sunway.edu.np
+| Not valid before: 2023-08-08T00:00:00
+|_Not valid after:  2023-11-06T23:59:59
+|_ssl-date: 2023-09-24T09:18:41+00:00; 0s from scanner time.
+|_pop3-capabilities: TOP PIPELINING CAPA USER RESP-CODES UIDL STLS SASL(PLAIN LOGIN) AUTH-RESP-CODE
+111/tcp  open  rpcbind    2-4 (RPC #100000)
+| rpcinfo: 
+|   program version    port/proto  service
+|   100000  2,3,4        111/tcp   rpcbind
+|   100000  2,3,4        111/udp   rpcbind
+|   100000  3,4          111/tcp6  rpcbind
+|   100000  3,4          111/udp6  rpcbind
+|   100024  1            662/tcp   status
+|   100024  1            662/tcp6  status
+|   100024  1            662/udp   status
+|_  100024  1            662/udp6  status
+143/tcp  open  imap       Dovecot imapd
+|_ssl-date: 2023-09-24T09:18:41+00:00; 0s from scanner time.
+|_imap-capabilities: NAMESPACE ID ENABLE AUTH=LOGINA0001 STARTTLS more post-login LOGIN-REFERRALS SASL-IR AUTH=PLAIN Pre-login capabilities LITERAL+ IMAP4rev1 IDLE have OK listed
+| ssl-cert: Subject: commonName=sunway.edu.np
+| Subject Alternative Name: DNS:sunway.edu.np, DNS:autodiscover.sunway.edu.np, DNS:cpanel.sunway.edu.np, DNS:cpcalendars.sunway.edu.np, DNS:cpcontacts.sunway.edu.np, DNS:mail.sunway.edu.np, DNS:webdisk.sunway.edu.np, DNS:webmail.sunway.edu.np, DNS:www.sunway.edu.np
+| Not valid before: 2023-08-08T00:00:00
+|_Not valid after:  2023-11-06T23:59:59
+443/tcp  open  ssl/http   Apache httpd
+|_http-title: Sunway College Kathmandu
+| ssl-cert: Subject: commonName=sunway.edu.np
+| Subject Alternative Name: DNS:sunway.edu.np, DNS:autodiscover.sunway.edu.np, DNS:cpanel.sunway.edu.np, DNS:cpcalendars.sunway.edu.np, DNS:cpcontacts.sunway.edu.np, DNS:mail.sunway.edu.np, DNS:webdisk.sunway.edu.np, DNS:webmail.sunway.edu.np, DNS:www.sunway.edu.np
+| Not valid before: 2023-08-08T00:00:00
+|_Not valid after:  2023-11-06T23:59:59
+|_http-generator: WordPress 6.3.1
+|_ssl-date: TLS randomness does not represent time
+|_http-server-header: Apache
+465/tcp  open  ssl/smtp   Exim smtpd 4.96
+|_ssl-date: 2023-09-24T09:18:34+00:00; +1s from scanner time.
+| smtp-commands: sgssr3.supercp.com Hello sunway.edu.np [103.41.172.10], SIZE 52428800, 8BITMIME, PIPELINING, PIPECONNECT, AUTH PLAIN LOGIN, HELP
+|_ Commands supported: AUTH HELO EHLO MAIL RCPT DATA BDAT NOOP QUIT RSET HELP
+| ssl-cert: Subject: commonName=sunway.edu.np
+| Subject Alternative Name: DNS:sunway.edu.np, DNS:autodiscover.sunway.edu.np, DNS:cpanel.sunway.edu.np, DNS:cpcalendars.sunway.edu.np, DNS:cpcontacts.sunway.edu.np, DNS:mail.sunway.edu.np, DNS:webdisk.sunway.edu.np, DNS:webmail.sunway.edu.np, DNS:www.sunway.edu.np
+| Not valid before: 2023-08-08T00:00:00
+|_Not valid after:  2023-11-06T23:59:59
+587/tcp  open  smtp       Exim smtpd 4.96
+| smtp-commands: sgssr3.supercp.com Hello sunway.edu.np [103.41.172.10], SIZE 52428800, 8BITMIME, PIPELINING, PIPECONNECT, AUTH PLAIN LOGIN, STARTTLS, HELP
+|_ Commands supported: AUTH STARTTLS HELO EHLO MAIL RCPT DATA BDAT NOOP QUIT RSET HELP
+|_ssl-date: 2023-09-24T09:18:49+00:00; 0s from scanner time.
+| ssl-cert: Subject: commonName=sunway.edu.np
+| Subject Alternative Name: DNS:sunway.edu.np, DNS:autodiscover.sunway.edu.np, DNS:cpanel.sunway.edu.np, DNS:cpcalendars.sunway.edu.np, DNS:cpcontacts.sunway.edu.np, DNS:mail.sunway.edu.np, DNS:webdisk.sunway.edu.np, DNS:webmail.sunway.edu.np, DNS:www.sunway.edu.np
+| Not valid before: 2023-08-08T00:00:00
+|_Not valid after:  2023-11-06T23:59:59
+993/tcp  open  ssl/imap   Dovecot imapd
+|_imap-capabilities: NAMESPACE ID ENABLE AUTH=LOGINA0001 more post-login LOGIN-REFERRALS SASL-IR AUTH=PLAIN Pre-login capabilities LITERAL+ IMAP4rev1 have IDLE OK listed
+|_ssl-date: 2023-09-24T09:18:34+00:00; +1s from scanner time.
+| ssl-cert: Subject: commonName=sunway.edu.np
+| Subject Alternative Name: DNS:sunway.edu.np, DNS:autodiscover.sunway.edu.np, DNS:cpanel.sunway.edu.np, DNS:cpcalendars.sunway.edu.np, DNS:cpcontacts.sunway.edu.np, DNS:mail.sunway.edu.np, DNS:webdisk.sunway.edu.np, DNS:webmail.sunway.edu.np, DNS:www.sunway.edu.np
+| Not valid before: 2023-08-08T00:00:00
+|_Not valid after:  2023-11-06T23:59:59
+995/tcp  open  ssl/pop3   Dovecot pop3d
+|_pop3-capabilities: USER RESP-CODES UIDL PIPELINING SASL(PLAIN LOGIN) AUTH-RESP-CODE TOP CAPA
+|_ssl-date: 2023-09-24T09:18:34+00:00; +1s from scanner time.
+| ssl-cert: Subject: commonName=sunway.edu.np
+| Subject Alternative Name: DNS:sunway.edu.np, DNS:autodiscover.sunway.edu.np, DNS:cpanel.sunway.edu.np, DNS:cpcalendars.sunway.edu.np, DNS:cpcontacts.sunway.edu.np, DNS:mail.sunway.edu.np, DNS:webdisk.sunway.edu.np, DNS:webmail.sunway.edu.np, DNS:www.sunway.edu.np
+| Not valid before: 2023-08-08T00:00:00
+|_Not valid after:  2023-11-06T23:59:59
+2525/tcp open  smtp       Exim smtpd 4.96
+| smtp-commands: sgssr3.supercp.com Hello sunway.edu.np [103.41.172.10], SIZE 52428800, 8BITMIME, PIPELINING, PIPECONNECT, AUTH PLAIN LOGIN, STARTTLS, HELP
+|_ Commands supported: AUTH STARTTLS HELO EHLO MAIL RCPT DATA BDAT NOOP QUIT RSET HELP
+|_ssl-date: 2023-09-24T09:18:41+00:00; 0s from scanner time.
+| ssl-cert: Subject: commonName=sunway.edu.np
+| Subject Alternative Name: DNS:sunway.edu.np, DNS:autodiscover.sunway.edu.np, DNS:cpanel.sunway.edu.np, DNS:cpcalendars.sunway.edu.np, DNS:cpcontacts.sunway.edu.np, DNS:mail.sunway.edu.np, DNS:webdisk.sunway.edu.np, DNS:webmail.sunway.edu.np, DNS:www.sunway.edu.np
+| Not valid before: 2023-08-08T00:00:00
+|_Not valid after:  2023-11-06T23:59:59
+3306/tcp open  mysql      MySQL 5.5.5-10.2.43-MariaDB-cll-lve
+| mysql-info: 
+|   Protocol: 10
+|   Version: 5.5.5-10.2.43-MariaDB-cll-lve
+|   Thread ID: 15290382
+|   Capabilities flags: 63486
+|   Some Capabilities: ConnectWithDatabase, Speaks41ProtocolOld, SupportsTransactions, SupportsLoadDataLocal, LongColumnFlag, InteractiveClient, Speaks41ProtocolNew, IgnoreSigpipes, IgnoreSpaceBeforeParenthesis, ODBCClient, SupportsCompression, DontAllowDatabaseTableColumn, FoundRows, Support41Auth, SupportsMultipleResults, SupportsMultipleStatments, SupportsAuthPlugins
+|   Status: Autocommit
+|   Salt: I^zn:rS'eL,7l=,c-WOd
+|_  Auth Plugin Name: mysql_native_password
+5432/tcp open  postgresql PostgreSQL DB 9.4.13 - 9.4.15 or 9.4.22 - 9.4.26
+Service Info: OS: Linux; CPE: cpe:/o:redhat:enterprise_linux:6
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Sep 24 15:04:27 2023 -- 1 IP address (1 host up) scanned in 277.80 seconds

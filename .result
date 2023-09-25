@@ -1,0 +1,3 @@
+# Nmap 7.94 scan initiated Sun Sep 24 14:43:54 2023 as: nmap -sC -sV -T4 -oN .result
+WARNING: No targets were specified, so 0 hosts scanned.
+# Nmap done at Sun Sep 24 14:43:54 2023 -- 0 IP addresses (0 hosts up) scanned in 0.12 seconds
