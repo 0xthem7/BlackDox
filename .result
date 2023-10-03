@@ -1,3 +1,4 @@
-# Nmap 7.94 scan initiated Sun Sep 24 14:43:54 2023 as: nmap -sC -sV -T4 -oN .result
+# Nmap 7.94 scan initiated Tue Oct  3 01:00:40 2023 as: nmap -A -vv -T4 -oN .result
+Read data files from: /usr/bin/../share/nmap
 WARNING: No targets were specified, so 0 hosts scanned.
-# Nmap done at Sun Sep 24 14:43:54 2023 -- 0 IP addresses (0 hosts up) scanned in 0.12 seconds
+# Nmap done at Tue Oct  3 01:00:40 2023 -- 0 IP addresses (0 hosts up) scanned in 0.39 seconds

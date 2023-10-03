@@ -1,0 +1,4 @@
+#!/bin/bash 
+clear
+printf "Port \t Status Service \t Version\n"
+grep -r 'open' reports/"$1" | awk -F/ '{print $1"/"$2}' 
