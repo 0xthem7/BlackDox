@@ -1,0 +1,128 @@
+# Nmap 7.94 scan initiated Sat Oct  7 19:17:09 2023 as: nmap -A -vv -T4 -oN himansu.com.np.result himansu.com.np
+Warning: Hostname himansu.com.np resolves to 4 IPs. Using 188.114.97.3.
+Nmap scan report for himansu.com.np (188.114.97.3)
+Host is up, received syn-ack (0.20s latency).
+Other addresses for himansu.com.np (not scanned): 2a06:98c1:3121::3 2a06:98c1:3120::3 188.114.96.3
+Scanned at 2023-10-07 19:17:10 +0545 for 107s
+Not shown: 996 filtered tcp ports (no-response)
+PORT     STATE SERVICE  REASON  VERSION
+80/tcp   open  http     syn-ack Cloudflare http proxy
+|_http-title: Did not follow redirect to https://himansu.com.np/
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: cloudflare
+443/tcp  open  ssl/http syn-ack Cloudflare http proxy
+| tls-nextprotoneg: 
+|   h2
+|_  http/1.1
+| http-methods: 
+|_  Supported Methods: GET HEAD
+|_http-title:                 0 x t h e M 7              
+| ssl-cert: Subject: commonName=himansu.com.np
+| Subject Alternative Name: DNS:himansu.com.np, DNS:*.himansu.com.np
+| Issuer: commonName=GTS CA 1P5/organizationName=Google Trust Services LLC/countryName=US
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2023-08-09T10:25:31
+| Not valid after:  2023-11-07T10:25:30
+| MD5:   dd1d:36ea:eabf:fb44:cc34:1968:7183:c7a7
+| SHA-1: f763:7ba8:5fb9:ca3f:d8a5:492e:2ad9:ce65:6edb:5434
+| -----BEGIN CERTIFICATE-----
+| MIIFdDCCBFygAwIBAgIRAMa9Fe3WgW59DppAgRqV+xswDQYJKoZIhvcNAQELBQAw
+| RjELMAkGA1UEBhMCVVMxIjAgBgNVBAoTGUdvb2dsZSBUcnVzdCBTZXJ2aWNlcyBM
+| TEMxEzARBgNVBAMTCkdUUyBDQSAxUDUwHhcNMjMwODA5MTAyNTMxWhcNMjMxMTA3
+| MTAyNTMwWjAZMRcwFQYDVQQDEw5oaW1hbnN1LmNvbS5ucDCCASIwDQYJKoZIhvcN
+| AQEBBQADggEPADCCAQoCggEBAOgPhAhPcmeZ+bAeihlv/JFZJB6c33S6UqlhND8X
+| Hw0xwIW4R9YLrNNeoHcVzbvZOPIatmJJgxfXmRIg1YNdlX6jtwo2EqlQxzfKMjby
+| 7TQdJHKMtDfzILzadC96/QpSFvzGeq/eRUp7YC2vMGF6/4+aLCfyAbxM/1eS0l0H
+| IZKF50NEuD1dRv1RRM0j5B4zSKnuA+vwcTP911S7AnwUlhDfLy+cbNrXePoJcQdW
+| /baI9iwWtuTAQQFcqQGhWneJxfELSYQZtQmvL9SjCIEoSchnEyuQ5clKibxsbvV1
+| ZmSP6xFmRU96vu/v7Eah6tF26214BNQ7ZPlZ8fyNgpLWhV8CAwEAAaOCAogwggKE
+| MA4GA1UdDwEB/wQEAwIFoDATBgNVHSUEDDAKBggrBgEFBQcDATAMBgNVHRMBAf8E
+| AjAAMB0GA1UdDgQWBBQRi1/4AbiQrRTStW64CUPQ+J4CCDAfBgNVHSMEGDAWgBTV
+| /J4N3x7K3QiXl24rxV/FK/XsuDB4BggrBgEFBQcBAQRsMGowNQYIKwYBBQUHMAGG
+| KWh0dHA6Ly9vY3NwLnBraS5nb29nL3MvZ3RzMXA1L05pX0xHc1BVUmt3MDEGCCsG
+| AQUFBzAChiVodHRwOi8vcGtpLmdvb2cvcmVwby9jZXJ0cy9ndHMxcDUuZGVyMCsG
+| A1UdEQQkMCKCDmhpbWFuc3UuY29tLm5wghAqLmhpbWFuc3UuY29tLm5wMCEGA1Ud
+| IAQaMBgwCAYGZ4EMAQIBMAwGCisGAQQB1nkCBQMwPAYDVR0fBDUwMzAxoC+gLYYr
+| aHR0cDovL2NybHMucGtpLmdvb2cvZ3RzMXA1L09FWi16R0lrVk5NLmNybDCCAQUG
+| CisGAQQB1nkCBAIEgfYEgfMA8QB3AHoyjFTYty22IOo44FIe6YQWcDIThU070ivB
+| OlejUutSAAABidoLeIEAAAQDAEgwRgIhAL8DgRqnCIEzgLPAHGeAITKU8P0YdAY1
+| qDTbXbyu5BLgAiEAorG7M+A7YXG5X9vH6HJkL4/mM3m8piaaznHuBrtPyVoAdgDo
+| PtDaPvUGNTLnVyi8iWvJA9PL0RFr7Otp4Xd9bQa9bgAAAYnaC3hQAAAEAwBHMEUC
+| IFtNmVOu8NPDq7tb+hK0AZhLxIN22+c6K/IOAOALKJQ+AiEAmosboKzDaNvTHddH
+| RVzeeSQIGsWiEYEtzRAkWDR1FNswDQYJKoZIhvcNAQELBQADggEBAEqSIUsPrrGz
+| FOScKB8c8p57Wjpl8UOrWzGDYJY66FsN4m8mxU7tWV/Wau/FS+OKCgkCqMo2BdnN
+| UDXbgHWkGcuDXiQIOmELtAG4TAmEywBWNZTRrKmXDt5HQ0A/ek2KHfVD9aLZbxqx
+| tpEK8X1Ffzhn7p7ZgW9/qEfMGXBJEbaUR8iNT1CcRotQq9yUykXRyICLbMKwDUAn
+| kyDluy50+L8Q9//kowxhGodMph5J76iUQy3ROmUQ/nH3rOfgcI3MSjxTWCMkEiHu
+| E11f29CNgrW+TCnVqvGuozIPSTD3MrykL4UDQSSsT1CpaL6qshI30pbzUmxlP3aU
+| /b4dvZaCGyE=
+|_-----END CERTIFICATE-----
+|_ssl-date: TLS randomness does not represent time
+|_http-server-header: cloudflare
+| tls-alpn: 
+|   h2
+|_  http/1.1
+8080/tcp open  http     syn-ack Cloudflare http proxy
+|_http-server-header: cloudflare
+|_http-title: Did not follow redirect to https://himansu.com.np/
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+8443/tcp open  ssl/http syn-ack Cloudflare http proxy
+| tls-nextprotoneg: 
+|   h2
+|_  http/1.1
+|_http-title: 400 The plain HTTP request was sent to HTTPS port
+|_http-server-header: cloudflare
+| tls-alpn: 
+|   h2
+|_  http/1.1
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=himansu.com.np
+| Subject Alternative Name: DNS:himansu.com.np, DNS:*.himansu.com.np
+| Issuer: commonName=GTS CA 1P5/organizationName=Google Trust Services LLC/countryName=US
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2023-08-09T10:25:31
+| Not valid after:  2023-11-07T10:25:30
+| MD5:   dd1d:36ea:eabf:fb44:cc34:1968:7183:c7a7
+| SHA-1: f763:7ba8:5fb9:ca3f:d8a5:492e:2ad9:ce65:6edb:5434
+| -----BEGIN CERTIFICATE-----
+| MIIFdDCCBFygAwIBAgIRAMa9Fe3WgW59DppAgRqV+xswDQYJKoZIhvcNAQELBQAw
+| RjELMAkGA1UEBhMCVVMxIjAgBgNVBAoTGUdvb2dsZSBUcnVzdCBTZXJ2aWNlcyBM
+| TEMxEzARBgNVBAMTCkdUUyBDQSAxUDUwHhcNMjMwODA5MTAyNTMxWhcNMjMxMTA3
+| MTAyNTMwWjAZMRcwFQYDVQQDEw5oaW1hbnN1LmNvbS5ucDCCASIwDQYJKoZIhvcN
+| AQEBBQADggEPADCCAQoCggEBAOgPhAhPcmeZ+bAeihlv/JFZJB6c33S6UqlhND8X
+| Hw0xwIW4R9YLrNNeoHcVzbvZOPIatmJJgxfXmRIg1YNdlX6jtwo2EqlQxzfKMjby
+| 7TQdJHKMtDfzILzadC96/QpSFvzGeq/eRUp7YC2vMGF6/4+aLCfyAbxM/1eS0l0H
+| IZKF50NEuD1dRv1RRM0j5B4zSKnuA+vwcTP911S7AnwUlhDfLy+cbNrXePoJcQdW
+| /baI9iwWtuTAQQFcqQGhWneJxfELSYQZtQmvL9SjCIEoSchnEyuQ5clKibxsbvV1
+| ZmSP6xFmRU96vu/v7Eah6tF26214BNQ7ZPlZ8fyNgpLWhV8CAwEAAaOCAogwggKE
+| MA4GA1UdDwEB/wQEAwIFoDATBgNVHSUEDDAKBggrBgEFBQcDATAMBgNVHRMBAf8E
+| AjAAMB0GA1UdDgQWBBQRi1/4AbiQrRTStW64CUPQ+J4CCDAfBgNVHSMEGDAWgBTV
+| /J4N3x7K3QiXl24rxV/FK/XsuDB4BggrBgEFBQcBAQRsMGowNQYIKwYBBQUHMAGG
+| KWh0dHA6Ly9vY3NwLnBraS5nb29nL3MvZ3RzMXA1L05pX0xHc1BVUmt3MDEGCCsG
+| AQUFBzAChiVodHRwOi8vcGtpLmdvb2cvcmVwby9jZXJ0cy9ndHMxcDUuZGVyMCsG
+| A1UdEQQkMCKCDmhpbWFuc3UuY29tLm5wghAqLmhpbWFuc3UuY29tLm5wMCEGA1Ud
+| IAQaMBgwCAYGZ4EMAQIBMAwGCisGAQQB1nkCBQMwPAYDVR0fBDUwMzAxoC+gLYYr
+| aHR0cDovL2NybHMucGtpLmdvb2cvZ3RzMXA1L09FWi16R0lrVk5NLmNybDCCAQUG
+| CisGAQQB1nkCBAIEgfYEgfMA8QB3AHoyjFTYty22IOo44FIe6YQWcDIThU070ivB
+| OlejUutSAAABidoLeIEAAAQDAEgwRgIhAL8DgRqnCIEzgLPAHGeAITKU8P0YdAY1
+| qDTbXbyu5BLgAiEAorG7M+A7YXG5X9vH6HJkL4/mM3m8piaaznHuBrtPyVoAdgDo
+| PtDaPvUGNTLnVyi8iWvJA9PL0RFr7Otp4Xd9bQa9bgAAAYnaC3hQAAAEAwBHMEUC
+| IFtNmVOu8NPDq7tb+hK0AZhLxIN22+c6K/IOAOALKJQ+AiEAmosboKzDaNvTHddH
+| RVzeeSQIGsWiEYEtzRAkWDR1FNswDQYJKoZIhvcNAQELBQADggEBAEqSIUsPrrGz
+| FOScKB8c8p57Wjpl8UOrWzGDYJY66FsN4m8mxU7tWV/Wau/FS+OKCgkCqMo2BdnN
+| UDXbgHWkGcuDXiQIOmELtAG4TAmEywBWNZTRrKmXDt5HQ0A/ek2KHfVD9aLZbxqx
+| tpEK8X1Ffzhn7p7ZgW9/qEfMGXBJEbaUR8iNT1CcRotQq9yUykXRyICLbMKwDUAn
+| kyDluy50+L8Q9//kowxhGodMph5J76iUQy3ROmUQ/nH3rOfgcI3MSjxTWCMkEiHu
+| E11f29CNgrW+TCnVqvGuozIPSTD3MrykL4UDQSSsT1CpaL6qshI30pbzUmxlP3aU
+| /b4dvZaCGyE=
+|_-----END CERTIFICATE-----
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Oct  7 19:18:57 2023 -- 1 IP address (1 host up) scanned in 108.04 seconds
