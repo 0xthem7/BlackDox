@@ -58,7 +58,8 @@ class blackDox:
             os.system(f'wpscan --url {self.target} --random-user-agent -o reports/{self.target}.result')
         
         elif self.choice == "3" or self.choice == "03":
-            os.system(f'sqlmap -u {command} -D acuart --tables')
+            self.target = input(f"{self.RED}[{self.RESET}~{self.RED}]{self.RESET} {self.GREEN}Target :{self.RESET} ")
+            os.system(f'sqlmap -u {command} --dbs')
         
         elif self.choice == "4" or self.choice == "04":
             print('''
