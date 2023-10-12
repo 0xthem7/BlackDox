@@ -41,12 +41,12 @@ class blackDox:
         print(f"{self.YELLOW}[+]{self.RESET} {self.GREEN}Tool created by Apocalypse{self.RESET}")
         print(f"{self.RED}.:.{self.RESET}  {self.CYAN}Select any option:{self.RESET}")
         print(f"{self.YELLOW}[01]{self.RESET}{self.MAGENTA}internal{self.RESET} \t{self.YELLOW}[02]{self.MAGENTA}external{self.RESET}")
-        print(f"{self.YELLOW}[03]{self.RESET}{self.MAGENTA}injection{self.RESET} \t{self.YELLOW}[03]{self.RESET}{self.MAGENTA}help{self.RESET}")
+        print(f"{self.YELLOW}[03]{self.RESET}{self.MAGENTA}injection{self.RESET} \t{self.YELLOW}[04]{self.RESET}{self.MAGENTA}help{self.RESET}")
         print(f"{self.YELLOW}[00]{self.MAGENTA}exit{self.RESET}")
 
 
         self.choice = input(f"{self.RED}[{self.RESET}~{self.RED}]{self.RESET} {self.GREEN}Select an option:{self.RESET} ")
-        if self.choice == "1" or "01":
+        if self.choice == "1" or self.choice == "01":
             self.target = input(f"{self.RED}[{self.RESET}~{self.RED}]{self.RESET} {self.GREEN}Target url:{self.RESET} ")
             os.system(f'nmap -A -vv -T4 {self.target} -oN reports/{self.target}.result')
             os.system(f'scripts/report_nmap {self.target}.result')
@@ -56,8 +56,11 @@ class blackDox:
         elif self.choice == "2" or self.choice == "02":
             self.target = input(f"{self.RED}[{self.RESET}~{self.RED}]{self.RESET} {self.GREEN}Target :{self.RESET} ")
             os.system(f'wpscan --url {self.target} --random-user-agent -o reports/{self.target}.result')
-            
+        
         elif self.choice == "3" or self.choice == "03":
+            os.system(f'sqlmap -u {command} -D acuart --tables')
+        
+        elif self.choice == "4" or self.choice == "04":
             print('''
       .:. Black Dox help menu
     
@@ -108,16 +111,20 @@ class blackDox:
                 print(f'{self.CYAN}[{self.RED}~{self.GREEN}]{self.RED}Target not found !!!')
                 print(f'{self.CYAN}[{self.YELLOW}?{self.GREEN}]{self.YELLOW}Target : {self.RESET}',end='')
                 command = input()
-        elif 'external'  in command:
+        elif 'external' in command:
             try : 
                 command = command.split(' ')[1]
-                os.system(f'wpscan --url {command} --random-user-agent -o reports/{command}.wordpress.result')
+                #print(f'{command}')
+                os.system(f'wpscan --url {command} --random-user-agent')
             except:
                 print(f'{self.CYAN}[{self.RED}~{self.GREEN}]{self.RED}Target not found !!!')
                 print(f'{self.CYAN}[{self.YELLOW}?{self.GREEN}]{self.YELLOW}Target : {self.RESET}',end='')
                 command = input()
         elif 'makeItEasy'in command or  'makeiteasy'in command:
             self.makeItEasy()
+        elif 'injection' in command:
+            command = command.split(' ')[1]
+            os.system(f'sqlmap -u {command} -D acuart --tables')
         else:
             pass
 
